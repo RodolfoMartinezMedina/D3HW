@@ -25,7 +25,7 @@ d3.select("#scatter")
     .attr("class","tooltip")
     .style("opacity",1);
 
-d3.csv("D3HW/assets/data/data.csv",function(error,censusdata){
+d3.csv("/assets/data/data.csv",function(error,censusdata){
     if (error) throw error;
 
     censusdata.forEach(function(data){
